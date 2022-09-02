@@ -9,3 +9,16 @@ arch:
   - armhf
   - armv7
   - i386
+devices:
+  - /config/www/pics
+host_dbus: true
+map:
+  - config:rw
+options:
+  liquor: false
+  name: "world"
+  key: 2017
+schema:
+  liquor: bool
+  name: str
+  year: int
