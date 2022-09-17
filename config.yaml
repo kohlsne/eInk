@@ -12,13 +12,26 @@ arch:
 devices:
   - /config/www/pics
 host_dbus: true
+homeassistant_api: true
 map:
   - config:rw
+services:
+  - mqtt:need
 options:
+  username: "MQTT Username"
+  password: "MQTT Password"
   liquor: false
   name: "world"
   key: 2017
+  amount: 1
+  width: 1872
+  height: 1404
 schema:
+  username: str
+  password: str
   liquor: bool
   name: str
-  year: int
+  key: int
+  amount: int
+  width: int
+  height: int
