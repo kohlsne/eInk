@@ -1,2 +1,2 @@
-# eInk_HA
-Home Assistant Add on for my eink picture frame 
+# eInk
+Docker container to run on server to update my custom eink picture frame 
