@@ -24,9 +24,9 @@ int main(){
 	//Parse Header
 	char line[256];
 	printf("Here4\n");
-	for (uint8_t i = 0; i<5; i++){
+	for (uint8_t i = 0; i<3; i++){
 	  fgets(line, sizeof(line), r_ptr);
-	printf("Here5\n");
+          printf("Here5\n");
 	  printf("%s\n", line);
 	  switch(i){
 	    case 0:
@@ -36,9 +36,6 @@ int main(){
 		    }
 		    continue;
 	    case 1:
-	    case 2:
-		continue;
-	    case 3:
 		char *token = strtok(line," ");
 	      	x = atoi(token);
 	 	printf("%d\n", x);
@@ -46,7 +43,7 @@ int main(){
 		y = atoi(token);
 		printf("%d\n", y);
 	   	continue;
-	   case 4:
+	   case 2:
 		int temp = atoi(line);
 		if (temp != 15){
 			printf("Wrong Number of bit depth\n");
